@@ -1,0 +1,29 @@
+﻿<Window x:Class="ClassicCalcPrismWpf.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="390" Width="50" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <Label Content="電卓"/>
+            <Label Content="{Binding CalcResult}"/>
+            <Button Content="1" Command="{Binding Button1}"/>
+            <Button Content="2" Command="{Binding Button2}"/>
+            <Button Content="3" Command="{Binding Button3}"/>
+            <Button Content="4" Command="{Binding Button4}"/>
+            <Button Content="5" Command="{Binding Button5}"/>
+            <Button Content="6" Command="{Binding Button6}"/>
+            <Button Content="7" Command="{Binding Button7}"/>
+            <Button Content="8" Command="{Binding Button8}"/>
+            <Button Content="9" Command="{Binding Button9}"/>
+            <Button Content="+" Command="{Binding ButtonAdd}"/>
+            <Button Content="-" Command="{Binding ButtonSub}"/>
+            <Button Content="x" Command="{Binding ButtonMult}"/>
+            <Button Content="/" Command="{Binding ButtonDiv}"/>
+            <Button Content="=" Command="{Binding ButtonEqual}"/>
+            <Button Content="C" Command="{Binding ButtonClear}"/>
+            <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        </StackPanel>
+    </Grid>
+</Window>
