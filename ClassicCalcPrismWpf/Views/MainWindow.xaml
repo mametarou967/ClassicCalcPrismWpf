@@ -3,7 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="390" Width="50" WindowStartupLocation="CenterScreen">
+        Title="{Binding Title}" Height="390" Width="50" WindowStartupLocation="CenterScreen"
+        KeyUp="Window_KeyUp"
+        >
+    <!--
     <Window.InputBindings>
         <KeyBinding Key="D1"  Command="{Binding Button1}"/>
         <KeyBinding Key="D2"  Command="{Binding Button2}"/>
@@ -19,6 +22,7 @@
         <KeyBinding Key="Oem1" Modifiers="Shift" Command="{Binding ButtonMult}"/>
         <KeyBinding Key="OemQuestion" Command="{Binding ButtonDiv}"/>
     </Window.InputBindings>
+    -->
     <Grid>
         <StackPanel>
             <Label Content="電卓"/>
